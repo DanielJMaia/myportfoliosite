@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 html,
 body {
+    height: 100%;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Quicksand", sans-serif;
-    font-size: 62.5%;
-    font-size: 10px;
-    background-color: #e6e2dd;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #202020, #111119);
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
+.header-container {
+    height: 108px;
+}
 
 /* Navbar section */
 
@@ -20,19 +20,20 @@ body {
     position: fixed;
     line-height: 65px;
     text-align: center;
+    z-index: 1;
 }
 
 .nav div.logo {
     float: left;
     width: auto;
     height: auto;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 .nav div.logo a {
     text-decoration: none;
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
 
 .nav div.logo a:hover {
@@ -64,7 +65,7 @@ body {
     text-decoration: none;
     color: #fff;
     line-height: 65px;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
 }
 
 .nav div.main_list ul li a:hover {
