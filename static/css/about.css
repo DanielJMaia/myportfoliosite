@@ -1,0 +1,16 @@
+.skills-section {
+    padding-bottom: 2em;
+}
+.skills-icon {
+    font-size: 5em;
+}
+
+.progress-bar  {
+    color: #fff;
+    background-color: #e31b6d;
+}
+.bar-colour {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+    border: 1px solid;
+}
