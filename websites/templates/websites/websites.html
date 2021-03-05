@@ -8,7 +8,11 @@
 {% block page_header %}
     <div class="container">
         <div class="row header-container">
-            <div class="col"></div>
+            {% for website in websites %}
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <img src="{{ MEDIA_URL }}{{ website.thumbnail }}" alt="{{ website.name }} image" class="project-images w-100">
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}
