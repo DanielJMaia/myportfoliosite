@@ -55,7 +55,7 @@
     <div class="container mx-auto">
         <div class="row">
             <div class="col-sm-12 col-lg-5">
-                <img class="w-100" src="{% static 'img/pp.jpg'%}">
+                <img class="w-100" src="{% static 'img/pp.jpg'%}" alt="Daniel Photo">
             </div>
             <div class="col-sm-12 col-lg-7">
                 <div class="bar-colour">
@@ -69,20 +69,30 @@
 
 <!-- Projects Section -->
 <section id="projects">
-    <div class="row header-row">
-        <div class="col">
-            <h1 class="section-header">PROJECTS</h1>
+    <div class="container">
+        <div class="row header-row">
+            <div class="col">
+                <h1 class="section-header">PROJECTS</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <img src="{% static 'img/pp.jpg'%}" alt="Project Image" class="project-images w-100">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Contact Me Section -->
 <section id="contact">
-    <div class="row header-row">
-        <div class="col">
-            <h1 class="section-header">CONTACT</h1>
-        </div>
+    <div class="container">
+        <div class="row header-row">
+            <div class="col">
+                <h1 class="section-header">CONTACT</h1>
+            </div>
+        </div> 
     </div>
+    
 </section>
 {% endblock %}
 
