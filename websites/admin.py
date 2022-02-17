@@ -5,7 +5,7 @@ class WebsiteAdmin(admin.ModelAdmin):
 
     fields = ['name',
               'subtitle',
-              'technology',
+              'url',
               'thumbnail',
               'description',
               'image1',

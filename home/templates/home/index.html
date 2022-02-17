@@ -33,13 +33,15 @@
         <div class="row">
             {% for website in websites %}
                 <div class="container page-wrapper">
-                    <div class="row justify-content-center">
-                        <div class="col-xs-12 col-sm-8 col-lg-6 site">
-                            <img class="img w-100 project-image" src="{{ website.thumbnail.url }}" alt="">
-                            <h2 class="text-center">{{ website.name }}</h2>
-                            <p class="text-center">{{ website.description }}</p>
-                        </div>    
-                    </div>      
+                    <a href="{{ website.url }}" target="_blank">
+                        <div class="row justify-content-center">
+                            <div class="col-xs-12 col-sm-8 col-lg-6 site">
+                                <img class="img w-100 project-image" src="{{ website.thumbnail.url }}" alt="">
+                                <h2 class="text-center">{{ website.name }}</h2>
+                                <p class="text-center">{{ website.description }}</p>
+                            </div>    
+                        </div>      
+                    </a>
                 </div>
             {% endfor %}
         </div>

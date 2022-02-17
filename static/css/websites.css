@@ -1,5 +1,5 @@
 .project-image {
-  border-radius: 105px;
+  border-radius: 250px;
 }
 
 .page-wrapper {
@@ -14,6 +14,11 @@
 h2 {
   font-size: 25px;
   padding-top: 15px;
+}
+
+a, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 .site {
