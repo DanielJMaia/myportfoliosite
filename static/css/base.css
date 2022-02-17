@@ -3,6 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
     color: #000000c0;
+    scroll-behavior: smooth;
 }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -16,3 +17,13 @@ body {
     font-weight: 500;
 }
 
+.navbar {
+    height: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 25px;
+    color: #fff!important;
+    padding: 15px!important;
+}
