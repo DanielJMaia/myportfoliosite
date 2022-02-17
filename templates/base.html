@@ -57,9 +57,11 @@
                     </div>
                     <div id="mainListDiv" class="main_list">
                         <ul class="navlinks">
+                        <!-- 
                             <li><a href="#home">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                        -->
                             <li><a href="{% url 'contact' %}">Contact</a></li>
                         </ul>
                     </div>
@@ -100,19 +102,9 @@
         {% endblock %}
    
      
-        <!-- START Bootstrap-Cookie-Alert -->
-        <div class="alert text-center cookiealert" role="alert">
-            <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
-
-            <button type="button" class="btn btn-sm btn-custom-cookie acceptcookies">
-                I agree
-            </button>
-        </div>
-        <!-- END Bootstrap-Cookie-Alert -->
-
+    
     {% block postloadjs %}
         <script src="{% static 'js/base_postload.js'%}"></script>
-        <script src="{% static 'js/cookiealert.js'%}"></script>
     {% endblock%}
 
 </body>
