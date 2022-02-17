@@ -22,52 +22,6 @@
     </div>   
 </section>
 
-<!-- About Me Section -->
-<section id="about">
-    <div class="container mx-auto">
-        <div class="row header-row">
-            <div class="col">
-                <h1 class="section-header">ABOUT</h1>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-sm-12 col-md-6 col-xl-3 skills-section">
-                <i class="fas fa-mobile-alt skills-icon"></i>
-                <h2>Responsive</h2>
-                <p>Filler text Filler Text Filler Text Filler text Filler text</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 skills-section">
-                <i class="fas fa-mobile-alt skills-icon"></i>
-                <h2>Responsive</h2>
-                <p>Filler text Filler Text Filler Text Filler text Filler text</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 skills-section">
-                <i class="fas fa-mobile-alt skills-icon"></i>
-                <h2>Responsive</h2>
-                <p>Filler text Filler Text Filler Text Filler text Filler text</p>
-            </div>
-            <div class="col-sm-12 col-md-6 col-xl-3 skills-section">
-                <i class="fas fa-mobile-alt skills-icon"></i>
-                <h2>Responsive</h2>
-                <p>Filler text Filler Text Filler Text Filler text Filler text</p>
-            </div>
-        </div>
-    </div>
-    <div class="container mx-auto">
-        <div class="row">
-            <div class="col-sm-12 col-lg-5">
-                <img class="w-100" src="{% static 'img/pp.jpg'%}" alt="Daniel Photo">
-            </div>
-            <div class="col-sm-12 col-lg-7">
-                <div class="bar-colour">
-                    <div class="progress-bar text-center" style="width:25%">25%</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
 <!-- Projects Section -->
 <section id="projects">
     <div class="container">
@@ -78,60 +32,19 @@
         </div>
         <div class="row">
             {% for website in websites %}
-                <!--
-                    <div class="col-sm-12 col-md-6 col-lg-4 website-info">
-                    <div class="view-more justify-content-center mb-2">
-                        <p class="mb-1 w-75 mx-auto">Chat</p>
-                        <p class="mb-1 w-75 mx-auto">Phone</p>
-                        <p class="mb-1 w-75 mx-auto">Email</p>
-                    </div>
-                    <img src="{{ website.thumbnail.url }}" alt="{{ website.name }} image" class="project-images w-100">
-                </div>
-                -->
                 <div class="container page-wrapper">
-                    <div class="page-inner">
-                      <div class="row">
-                        <div class="el-wrapper">
-                          <div class="box-up">
-                            <img class="img w-100" src="{{ website.thumbnail.url }}" alt="">
-                            <div class="img-info">
-                              <div class="info-inner">
-                                <span class="p-name">{{ website.name }}</span>
-                              </div>
-                              <div class="a-size"><span class="size">{{ website.description }}</span></div>
-                            </div>
-                          </div>
-                  
-                          <div class="box-down">
-                            <div class="h-bg">
-                              <div class="h-bg-inner"></div>
-                            </div>
-                  
-                            <a class="cart" href="#">
-                              <span class="add-to-cart">
-                                <span class="txt">View Website</span>
-                              </span>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-12 col-sm-8 col-lg-6 site">
+                            <img class="img w-100 project-image" src="{{ website.thumbnail.url }}" alt="">
+                            <h2 class="text-center">{{ website.name }}</h2>
+                            <p class="text-center">{{ website.description }}</p>
+                        </div>    
+                    </div>      
+                </div>
             {% endfor %}
         </div>
     </div>
 </section>
 
-<!-- Contact Me Section -->
-<section id="contact">
-    <div class="container">
-        <div class="row header-row">
-            <div class="col">
-                <h1 class="section-header">CONTACT</h1>
-            </div>
-        </div> 
-    </div>
-    
-</section>
 {% endblock %}
 
