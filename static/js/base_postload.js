@@ -1,16 +1,6 @@
-$('.navTrigger').click(function () {
-    $(this).toggleClass('active');
-    console.log("Clicked menu");
-    $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn();
+var contact = document.getElementById("contact-link");
+contact.addEventListener("click", scrollToBottom);
 
-});
-
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('.nav').addClass('affix');
-        console.log("OK");
-    } else {
-        $('.nav').removeClass('affix');
-    }
-});
+function scrollToBottom() {
+    window.scrollTo(0,document.body.scrollHeight);
+}

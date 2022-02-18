@@ -5,8 +5,7 @@ body {
     color: #000000c0;
     scroll-behavior: smooth;
 }
-/*-- Inspiration taken from abdo steif -->
-/* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
+
 
 .header-row {
     padding: 3em 0;
@@ -26,4 +25,34 @@ body {
     font-size: 25px;
     color: #fff!important;
     padding: 15px!important;
+}
+
+#contact-link:hover {
+    cursor: pointer;
+}
+
+/* Messages */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 45px;
+    z-index: 999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+
+.toast-header {
+    font-size: x-large;
+}
+
+.toast-body {
+    font-size: large;
+}
+
+.toast-capper {
+    height: 2px;
 }
