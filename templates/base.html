@@ -57,7 +57,7 @@
     </div>
   </nav>
         {% if messages %}
-            <div class="message-container">
+            <div class="message-container" id="message-container-id">
                 {% for message in messages %}
                     {% with message.level as level %}
                         {% if level == 40 %}
