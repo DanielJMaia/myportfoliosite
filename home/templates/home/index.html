@@ -18,7 +18,7 @@
 <section id="home">
     <div class="container landing-container">
         <h1>Hello, <u>I'm Daniel Johnson Maia</u>.</h1>
-        <h1>I'm a full-stack web developer.</h1>
+        <h1>I'm a full stack web developer.</h1>
     </div>   
 </section>
 
@@ -30,12 +30,14 @@
                 <h1 class="section-header">PROJECTS</h1>
             </div>
         </div>
+    </div>
+    <div class="container">
         <div class="row">
             {% for website in websites %}
-                <div class="container page-wrapper">
+                <div class="col-xs-12 col-md-6 col-lg-4 project-wrapper">
                     <a href="{{ website.url }}" target="_blank">
-                        <div class="row justify-content-center">
-                            <div class="col-xs-12 col-sm-8 col-lg-6 site">
+                        <div class="justify-content-center">
+                            <div class="site">
                                 <img class="img w-100 project-image" src="{{ website.thumbnail.url }}" alt="">
                                 <h2 class="text-center">{{ website.name }}</h2>
                                 <p class="text-center">{{ website.description }}</p>
@@ -46,6 +48,8 @@
             {% endfor %}
         </div>
     </div>
+       
+    
 </section>
 
 <section id="contact-section"></section>
